@@ -30,8 +30,9 @@
 \usepackage[a4paper]{geometry}
 \newgeometry{top=1.5cm,left=1.5cm,right=1.3cm,bottom=2.2cm}
 
-\usepackage[center]{titlesec}
+\usepackage[compact,raggedright]{titlesec}
 \usepackage{amsmath,amsfonts,amsthm}
+
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -53,15 +54,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % macros    macros    macros    macros   macros    macros    macros    macros   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newcommand\header[1]{\fancyhead[L]{\scriptsize\bf\center #1}}
 \newcommand\h[1]{{\vspace{0.5\baselineskip}\centering\subheadingfont\Large#1\par\vspace{0.2\baselineskip}}}
-%\newcommand\sh[1]{{\vspace{0.5\baselineskip}\subheadingfont\large#1}}
-\titleformat{name = \section, numberless}
-{\subheadingfont\large}
-{}{0em}{}
-\titlespacing\section{0pt}{6pt}{-\parskip}
+
+\titlespacing*{\section}{0pt}{3pt}{3pt}
+\titlespacing*{\subsection}{0pt}{3pt}{3pt}
+
+
 \newcommand\sh[1]{\section*{#1}}
+\newcommand\ssh[1]{\subsection*{#1}}
 \newcommand\red[1]{{\requiredfont #1}}
 \newcommand\note[1]{{\small\requiredfont #1}}
 \newcommand\ra{{\symbols →\hspace{0.3em}}\hangindent=0.85em}
@@ -74,6 +75,10 @@
 \newcommand{\vp}{\vspace{1ex}}
 \newcommand\mymath[1]{\begin{math}\begin{aligned}[t]#1\end{aligned}\end{math}}
 \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+
+\newcommand{\E}{\Epsilon}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % macros    macros    macros    macros   macros    macros    macros    macros   
