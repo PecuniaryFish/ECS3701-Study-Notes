@@ -7,6 +7,6 @@ Grab [PDF](https://github.com/PecuniaryFish/ECS3701-Study-Notes/blob/master/ecs3
 
     xelatex ecs3701notes.tex
 
-Notes are work in progress, busy cramming, check back for updates till last minute :wink:
+:runner: Notes are unedited, I  was unable to get an extension for the exam ...
 
 :+1: Please up an annotated PDF with corrections or pull a request issue ...
